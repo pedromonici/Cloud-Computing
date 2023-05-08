@@ -1,0 +1,8 @@
+source "/home/pedromonici/USP/IC/esp-idf/components/app_update/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/esp-idf/components/esp-nn/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/mqtt/tcp/main/Kconfig.projbuild"
+source "/home/pedromonici/USP/IC/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild"
