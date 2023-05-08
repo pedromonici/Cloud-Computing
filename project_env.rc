@@ -1,0 +1,1 @@
+alias consumer="docker exec a3541858df19 kafka-console-consumer --bootstrap-server localhost:29092 --topic \"measurments0\" --from-beginning"
