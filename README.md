@@ -29,9 +29,9 @@ Depois disso, podemos rodar nossa aplicação na ESP32, para isso rode o comando
 
 Entre em nosso cluster `gcloud02` e rode o comando `docker ps`. É possível notar que existem: 3 servidores de kafka, 3 bridges.py e 2 servidores de zookeeper. Cada ESP32 possui o seu respectivo servidor de kafka e o seu respectivo bridge.py. Existem 2 servidores de zookeeper para manter a redundância da nossa arquitetura, logo, se um servidor de zookeeper cair, a nossa aplicação não cai por completo.
 
-No diretório *Bridge* está presente o script escrito em python que recebe os dados da ESP32 pelo Mosquitto, utilizando o protocolo MQTT, e repassa esses dados para o tópico respectivo do Kafka.
+No diretório *bridge* está presente o script escrito em python que recebe os dados da ESP32 pelo Mosquitto, utilizando o protocolo MQTT, e repassa esses dados para o tópico respectivo do Kafka.
 
-No diretõrio *Kafka* está presente os arquivos de configuração de cada um dos containers do Docker e as configurações dos nossos servidores de Kafka.
+No arquivo docker-compose.yml estão presentes as configurações de cada um dos containers do Docker (bridges, brokers do kafka, instâncias do zookeeper).
 
 No diretório *Application* está presente o nosso script escrito em python que roda a nossa aplicação final.
 
